@@ -20,7 +20,7 @@ const Chat: React.FC = () => {
 
   return (
     <Card sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-      <List sx={{ flex: 1, overflow: 'auto' }}>
+      <List sx={{ flex: 1, overflowY: 'hidden' }}>
         {messages.map((msg, index) => (
           <ListItem key={index}>
             <ListItemText primary={msg} />
